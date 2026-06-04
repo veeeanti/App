@@ -89,7 +89,7 @@ This App uses an [API](https://github.com/Rule-34/API) to communicate with all t
 Use `git clone --recursively` because [this repository](https://github.com/Rule-34/Shared-Resources) is used to share
 some necessary resources.
 
-The shared resources submodule lives at `app/assets/lib/rule-34-shared-resources`.
+The shared resources submodule lives at `app/assets/lib/dist`.
 
 #### Environment variables
 

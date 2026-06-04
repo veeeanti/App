@@ -9,7 +9,7 @@
   import type { Domain } from '~/assets/js/domain'
   import Post from '~/assets/js/post.dto'
   import Tag from '~/assets/js/tag.dto'
-  import { booruTypeList } from '~/assets/lib/rule-34-shared-resources/src/util/BooruUtils'
+  import { booruTypeList } from '~/assets/lib/dist/src/util/BooruUtils'
   import type { IPost, IPostPage } from '~/assets/js/post.dto'
   import { generatePostsRoute, getFilterQueryValue, getSingleQueryValue } from '~/assets/js/RouterHelper'
   import { useTagTitle } from '~/composables/useTagTitle'

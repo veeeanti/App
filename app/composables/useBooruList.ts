@@ -1,4 +1,4 @@
-import { booruTypeList, completeBooruList } from '~/assets/lib/rule-34-shared-resources/src/util/BooruUtils'
+import { booruTypeList, completeBooruList } from '~/assets/lib/dist/src/util/BooruUtils'
 import { useLocalStorage } from '@vueuse/core'
 import type { Domain } from '~/assets/js/domain'
 

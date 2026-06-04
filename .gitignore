@@ -74,8 +74,8 @@ typings/
 dist
 
 # Submodules and third-party browser scripts
-assets/lib/rule-34-shared-resources
-app/assets/lib/rule-34-shared-resources
+assets/lib/dist
+app/assets/lib/dist
 
 # vuepress build output
 .vuepress/dist

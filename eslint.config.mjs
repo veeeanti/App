@@ -8,8 +8,8 @@ export default withNuxt(
       'coverage/**',
       'dist/**',
       'node_modules/**',
-      'assets/lib/rule-34-shared-resources/**',
-      'app/assets/lib/rule-34-shared-resources/**',
+      'assets/lib/dist/**',
+      'app/assets/lib/dist/**',
       'public/js/**'
     ]
   },

@@ -16,7 +16,7 @@ pnpm install            # triggers nuxt prepare via postinstall
 
 - **Node 24** required (`package.json` engines)
 - **pnpm ≥ 11.2.2** required (`packageManager` pins the expected version)
-- **Git submodule** at `app/assets/lib/rule-34-shared-resources` — clone with `--recursive`
+- **Git submodule** at `app/assets/lib/dist` — clone with `--recursive`
 - **External API**: the app calls a separate API service at `NUXT_PUBLIC_API_URL` (default `http://localhost:8081`). The
   API codebase is at [github.com/Rule-34/API](https://github.com/Rule-34/API).
 

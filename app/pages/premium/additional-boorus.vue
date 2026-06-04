@@ -4,7 +4,7 @@
   import { vAutoAnimate } from '@formkit/auto-animate/vue'
   import { useSortable } from '@vueuse/integrations/useSortable'
   import type { Ref } from 'vue'
-  import { booruTypeList } from '~/assets/lib/rule-34-shared-resources/src/util/BooruUtils'
+  import { booruTypeList } from '~/assets/lib/dist/src/util/BooruUtils'
   import Slideover from '~/components/layout/Slideover.vue'
 
   const { t } = useI18n()
