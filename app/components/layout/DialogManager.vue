@@ -25,10 +25,6 @@
     review: {
       component: resolveComponent('LazyReviewPrompt'),
       closeableFromBackground: false
-    },
-    premium: {
-      component: resolveComponent('LazyPremiumPrompt'),
-      closeableFromBackground: true
     }
   }
 
@@ -48,11 +44,6 @@
       isDialogReady.value = false
 
       if (!ready || !dialog) {
-        return
-      }
-
-      if (dialog === 'premium') {
-        isDialogReady.value = true
         return
       }
 

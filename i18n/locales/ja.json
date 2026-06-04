@@ -28,7 +28,6 @@
     "next": "次へ",
     "closeDialog": "ダイアログを閉じる",
     "scrollToTop": "上に戻る",
-    "closePromotionalBanner": "プロモーションバナーを閉じる",
     "openPostSourceOptions": "投稿ソースオプションを開く",
     "downloadPost": "投稿をダウンロード",
     "savePost": "投稿を保存",
@@ -47,7 +46,6 @@
     "domain": "ドメイン",
     "tags": "タグ",
     "logo": "ロゴ",
-    "featurePromotion": "機能プロモーション",
     "favicon": "Favicon",
     "page": "ページ",
     "pageNumber": "{page}ページ"
@@ -428,9 +426,7 @@
     "toBypassBlocks": "サイトのブロックを回避するには",
     "loadingMedia": "メディアを読み込み中…",
     "play": "再生",
-    "adText": "1時間に1回の広告のみ。Premiumで広告が永遠になくなります！",
-    "promotedContent": "プロモーションコンテンツ",
-    "promotedDescription": "広告なし＋限定機能",
+
     "postAlt": "投稿 #{id}",
     "postDescription": "{domain}の{mediaType} #{id}、スコア{score}、{rating}レーティング、タグ：{tags}",
     "shareFoundOn": "{name}で見つけました：{url}",
@@ -482,19 +478,6 @@
     "excludeTag": "タグを除外",
     "includeTag": "タグを含める",
     "submit": "検索"
-  },
-  "promotions": {
-    "percentOff": "{percent}%OFF",
-    "blackFriday": {
-      "title": "ブラックフライデーセール",
-      "description": "Premiumを半額で入手しよう！",
-      "cta": "Premiumを取得"
-    },
-    "valentines": {
-      "title": "バレンタインデースペシャル",
-      "description": "愛が空に漂っています！Premiumが30%オフ",
-      "cta": "Premiumを取得"
-    }
   },
   "time": {
     "days": "日",

@@ -28,7 +28,6 @@
     "next": "Sonraki",
     "closeDialog": "İletişim kutusunu kapat",
     "scrollToTop": "Yukarıya doğru kaydır",
-    "closePromotionalBanner": "Promosyon banner'ını kapat",
     "openPostSourceOptions": "Gönderi kaynağı seçeneklerini aç",
     "downloadPost": "Gönderiyi indir",
     "savePost": "Gönderiyi kaydet",
@@ -47,7 +46,6 @@
     "domain": "Etki alanı",
     "tags": "Etiketler",
     "logo": "logo",
-    "featurePromotion": "Özellik tanıtımı",
     "favicon": "Site simgesi",
     "page": "Sayfa",
     "pageNumber": "Sayfa {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "web sitesi engellemelerini aşmak için",
     "loadingMedia": "Medya yükleniyor…",
     "play": "Oyna",
-    "adText": "Saatte yalnızca bir reklam. Premium ile bir daha asla reklam görmeyin!",
-    "promotedContent": "Tanıtılan içerik",
-    "promotedDescription": "Reklam yok + ayrıcalıklı özellikler",
     "postAlt": "Gönderi #{id}",
     "postDescription": "{mediaType} #{id}, {domain}'den {score} puanıyla, {rating} derecelendirmesiyle, {tags} ile etiketlendi",
     "shareFoundOn": "{name} üzerinde bulundu: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "\"{tag}\" etiketini arayın",
     "changeFilter": "{label}'yi değiştir"
   },
-  "promotions": {
-    "percentOff": "{percent}% KAPALI",
-    "blackFriday": {
-      "title": "Kara Cuma İndirimi",
-      "description": "Premium'u yarı fiyatına alın!",
-      "cta": "Premium'u Alın"
-    },
-    "valentines": {
-      "title": "Sevgililer Günü Özel",
-      "description": "Havada aşk var! Premium'da %30 indirimden yararlanın",
-      "cta": "Premium'u Alın"
-    }
-  },
+
   "time": {
     "days": "d",
     "hours": "sa",

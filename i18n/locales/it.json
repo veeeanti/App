@@ -28,7 +28,6 @@
     "next": "Avanti",
     "closeDialog": "Chiudi la finestra di dialogo",
     "scrollToTop": "Scorri verso l'alto",
-    "closePromotionalBanner": "Chiudi il banner promozionale",
     "openPostSourceOptions": "Apri le opzioni del post source",
     "downloadPost": "Scarica la posta",
     "savePost": "Salva messaggio",
@@ -47,7 +46,6 @@
     "domain": "Dominio",
     "tags": "Tag",
     "logo": "Marchio",
-    "featurePromotion": "Promozione delle funzionalità",
     "favicon": "Favicon",
     "page": "Pagina",
     "pageNumber": "Pagina {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "per aggirare i blocchi del sito web",
     "loadingMedia": "Caricamento supporto…",
     "play": "Gioca",
-    "adText": "Solo un annuncio all'ora. Non vedrai mai più gli annunci con Premium!",
-    "promotedContent": "Contenuti promossi",
-    "promotedDescription": "Nessuna pubblicità + funzionalità esclusive",
     "postAlt": "Messaggio n.{id}",
     "postDescription": "{mediaType} #{id} da {domain} con un punteggio di {score}, valutazione {rating}, contrassegnato con {tags}",
     "shareFoundOn": "Trovato su {name}: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "Cerca il tag \"{tag}\".",
     "changeFilter": "Modifica {label}"
   },
-  "promotions": {
-    "percentOff": "{percent}% DI SCONTO",
-    "blackFriday": {
-      "title": "Saldi del Black Friday",
-      "description": "Ottieni Premium a metà prezzo!",
-      "cta": "Ottieni Premium"
-    },
-    "valentines": {
-      "title": "Speciale San Valentino",
-      "description": "L'amore è nell'aria! Ottieni uno sconto del 30% su Premium",
-      "cta": "Ottieni Premium"
-    }
-  },
+
   "time": {
     "days": "d",
     "hours": "h",

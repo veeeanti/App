@@ -1,19 +1,17 @@
 <script lang="ts" setup>
   import { SparklesIcon } from '@heroicons/vue/24/outline'
   import { flip, offset, shift, useFloating } from '@floating-ui/vue'
-  import { useChatWithAiReferral } from '~/composables/useAdvertisements'
   import useAppStatistics from '~/composables/useAppStatistics'
   import type { IPost } from '~/assets/js/post.dto'
 
   const props = defineProps<{
     tags: IPost['tags']
-    mediaType: IPost['media_type']
-    mediaUrl: string | null
   }>()
 
-  const { chatWithAiReferralTemplate } = useChatWithAiReferral()
   const { tutorialChatWithAi } = useAppStatistics()
   const { t } = useI18n()
+  const router = useRouter()
+  const localePath = useLocalePath()
 
   const referenceEl = ref<HTMLElement>()
   const floatingEl = ref<HTMLElement>()
@@ -43,41 +41,18 @@
     return tag.replaceAll('_', ' ')
   }
 
-  function formatTagForDisplay(tag: string) {
-    const normalized = formatTagForQuery(tag)
-
-    return normalized
-      .split(/(\W+)/)
-      .map((segment) => {
-        if (!segment || /\W+/.test(segment)) {
-          return segment
-        }
-
-        const lower = segment.toLowerCase()
-        return lower.charAt(0).toUpperCase() + lower.slice(1)
-      })
-      .join('')
-  }
-
-  function buildReferralUrl(tag: string) {
-    const query = formatTagForQuery(tag)
-    return chatWithAiReferralTemplate.value.replace('{query}', encodeURIComponent(query))
-  }
-
-  const nud3Url = computed(() => {
-    if (props.mediaType !== 'image' || !props.mediaUrl) {
-      return null
-    }
-
-    return `https://nud3.me/pornify?imageUrl=${encodeURIComponent(props.mediaUrl)}&r=r34`
-  })
-
   function onChatMenuOpen() {
     if (tutorialChatWithAi.value) {
       return
     }
 
     tutorialChatWithAi.value = true
+  }
+
+  async function onPostOpenTagInNewTab(tag: string) {
+    const tagRoute = `/posts/rule34.xxx?tags=${encodeURIComponent(tag)}`
+    const path = localePath(tagRoute)
+    window.open(router.resolve({ path, query: {} }).href, '_blank', 'noopener,noreferrer')
   }
 </script>
 
@@ -119,65 +94,29 @@
         leave-to-class="opacity-0"
       >
         <HeadlessMenuItems
-          ref="floatingEl"
+          v-if="normalizedTags.length > 0"
           :style="floatingStyles"
           class="z-50 w-56 divide-y divide-base-0/20 rounded-md bg-base-1000 ring-1 ring-base-0/20 focus:outline-hidden"
         >
-          <div
-            v-if="nud3Url"
-            class="py-1"
-          >
-            <div class="px-4 py-2 text-sm font-medium text-base-content-highlight">{{ t('common.aiVideo') }}</div>
-
-            <HeadlessMenuItem v-slot="{ active }">
-              <NuxtLink
-                :class="[active ? 'bg-base-0/20 text-[#F0489C]' : 'text-[#F0489C]']"
-                :href="nud3Url"
-                class="group flex w-full items-center gap-2 px-4 py-2 text-sm"
-                rel="nofollow noopener"
-                target="_blank"
-              >
-                <SparklesIcon
-                  aria-hidden="true"
-                  class="h-5 w-5"
-                />
-                <span class="truncate font-bold">{{ t('common.aiVideo') }}</span>
-              </NuxtLink>
-            </HeadlessMenuItem>
-          </div>
-
           <div class="py-1">
             <div class="px-4 py-2 text-sm font-medium text-base-content-highlight">
               {{ t('common.chatWithCharacters') }}
             </div>
-
-            <template v-if="normalizedTags.length > 0">
-              <HeadlessMenuItem
-                v-for="tag in normalizedTags"
-                :key="tag"
-                v-slot="{ active }"
-              >
-                <NuxtLink
-                  :class="[active ? 'bg-base-0/20 text-base-content-highlight' : 'text-base-content']"
-                  :href="buildReferralUrl(tag)"
-                  class="group flex w-full items-center px-4 py-2 text-sm"
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
-                  <span class="truncate">
-                    {{ formatTagForDisplay(tag) }}
-                  </span>
-                </NuxtLink>
-              </HeadlessMenuItem>
-            </template>
-
-            <span
-              v-else
-              class="block px-4 py-2 text-sm"
-            >
-              {{ t('common.noTagsAvailable') }}
-            </span>
           </div>
+
+          <HeadlessMenuItem
+            v-for="tag in normalizedTags"
+            :key="tag"
+            v-slot="{ active }"
+          >
+            <button
+              :class="[active ? 'bg-base-0/20 text-[#F0489C]' : 'text-[#F0489C]']"
+              class="flex w-full items-center gap-2 px-4 py-2 text-left text-sm"
+              @click="onPostOpenTagInNewTab(tag)"
+            >
+              <span class="truncate">{{ formatTagForQuery(tag) }}</span>
+            </button>
+          </HeadlessMenuItem>
         </HeadlessMenuItems>
       </Transition>
     </Teleport>

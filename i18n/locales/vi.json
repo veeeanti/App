@@ -28,7 +28,6 @@
     "next": "Tiếp theo",
     "closeDialog": "Đóng hộp thoại",
     "scrollToTop": "Cuộn lên trên cùng",
-    "closePromotionalBanner": "Đóng banner quảng cáo",
     "openPostSourceOptions": "Mở tùy chọn nguồn bài đăng",
     "downloadPost": "Tải bài viết xuống",
     "savePost": "Lưu bài đăng",
@@ -47,7 +46,6 @@
     "domain": "Tên miền",
     "tags": "Thẻ",
     "logo": "biểu tượng",
-    "featurePromotion": "Khuyến mãi tính năng",
     "favicon": "Biểu tượng yêu thích",
     "page": "Trang",
     "pageNumber": "Trang {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "để vượt qua việc chặn trang web",
     "loadingMedia": "Đang tải phương tiện…",
     "play": "Chơi",
-    "adText": "Chỉ có một quảng cáo mỗi giờ. Không bao giờ thấy quảng cáo nữa với Premium!",
-    "promotedContent": "Nội dung được quảng cáo",
-    "promotedDescription": "Không có quảng cáo + tính năng độc quyền",
     "postAlt": "Đăng #{id}",
     "postDescription": "{mediaType} #{id} từ {domain} với số điểm {score}, xếp hạng {rating}, được gắn thẻ {tags}",
     "shareFoundOn": "Được tìm thấy trên {name}: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "Tìm kiếm thẻ \"{tag}\"",
     "changeFilter": "Thay đổi {label}"
   },
-  "promotions": {
-    "percentOff": "{percent}% GIẢM GIÁ",
-    "blackFriday": {
-      "title": "Giảm giá Thứ Sáu Đen",
-      "description": "Nhận Premium với giá chỉ bằng một nửa!",
-      "cta": "Nhận phí bảo hiểm"
-    },
-    "valentines": {
-      "title": "Ngày lễ tình nhân đặc biệt",
-      "description": "Tình yêu ở trong không khí! Nhận 30% giảm giá cao cấp",
-      "cta": "Nhận phí bảo hiểm"
-    }
-  },
+
   "time": {
     "days": "d",
     "hours": "h",

@@ -28,7 +28,6 @@
     "next": "Selanjutnya",
     "closeDialog": "Tutup dialog",
     "scrollToTop": "Gulir ke atas",
-    "closePromotionalBanner": "Tutup spanduk promosi",
     "openPostSourceOptions": "Buka opsi sumber posting",
     "downloadPost": "Unduh postingan",
     "savePost": "Simpan postingan",
@@ -47,7 +46,6 @@
     "domain": "Domain",
     "tags": "Tag",
     "logo": "logo",
-    "featurePromotion": "Promosi fitur",
     "favicon": "favicon",
     "page": "Halaman",
     "pageNumber": "Halaman {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "untuk melewati blok situs web",
     "loadingMedia": "Memuat media…",
     "play": "Mainkan",
-    "adText": "Hanya satu iklan per jam. Jangan pernah melihat iklan lagi dengan Premium!",
-    "promotedContent": "Konten yang dipromosikan",
-    "promotedDescription": "Tanpa iklan + fitur eksklusif",
     "postAlt": "Pos #{id}",
     "postDescription": "{mediaType} #{id} dari {domain} dengan skor {score}, peringkat {rating}, ditandai dengan {tags}",
     "shareFoundOn": "Ditemukan di {name}: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "Cari tag \"{tag}\".",
     "changeFilter": "Ubah {label}"
   },
-  "promotions": {
-    "percentOff": "{percent} DISKON %.",
-    "blackFriday": {
-      "title": "Penjualan Jumat Hitam",
-      "description": "Dapatkan Premium dengan setengah harga!",
-      "cta": "Dapatkan Premium"
-    },
-    "valentines": {
-      "title": "Spesial Hari Valentine",
-      "description": "Cinta ada di udara! Dapatkan diskon 30% Premium",
-      "cta": "Dapatkan Premium"
-    }
-  },
+
   "time": {
     "days": "d",
     "hours": "h",

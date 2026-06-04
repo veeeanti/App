@@ -28,7 +28,6 @@
     "next": "Weiter",
     "closeDialog": "Dialog schließen",
     "scrollToTop": "Nach oben scrollen",
-    "closePromotionalBanner": "Werbebanner schließen",
     "openPostSourceOptions": "Optionen für Beitragsquelle öffnen",
     "downloadPost": "Beitrag herunterladen",
     "savePost": "Beitrag speichern",
@@ -47,7 +46,6 @@
     "domain": "Domain",
     "tags": "Tags",
     "logo": "Logo",
-    "featurePromotion": "Feature-Werbung",
     "favicon": "Favicon",
     "page": "Seite",
     "pageNumber": "Seite {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "um Website-Sperren zu umgehen",
     "loadingMedia": "Medien werden geladen…",
     "play": "Abspielen",
-    "adText": "Nur eine Werbung pro Stunde. Mit Premium siehst du nie wieder Werbung!",
-    "promotedContent": "Beworbener Inhalt",
-    "promotedDescription": "Keine Werbung + exklusive Features",
     "postAlt": "Beitrag #{id}",
     "postDescription": "{mediaType} #{id} von {domain} mit einem Score von {score}, Bewertung {rating}, getaggt mit {tags}",
     "shareFoundOn": "Gefunden auf {name}: {url}",
@@ -482,19 +477,6 @@
     "placeholderWithExample": "Nach Tags suchen: genshin_impact",
     "searchTagOption": "\"{tag}\"-Tag suchen",
     "changeFilter": "{label} ändern"
-  },
-  "promotions": {
-    "percentOff": "{percent}% RABATT",
-    "blackFriday": {
-      "title": "Black-Friday-Angebot",
-      "description": "Hol dir Premium zum halben Preis!",
-      "cta": "Premium holen"
-    },
-    "valentines": {
-      "title": "Valentinstag-Special",
-      "description": "Liebe liegt in der Luft! Hol dir 30 % Rabatt auf Premium",
-      "cta": "Premium holen"
-    }
   },
   "time": {
     "days": "T",

@@ -28,7 +28,6 @@
     "next": "Next",
     "closeDialog": "Close dialog",
     "scrollToTop": "Scroll to top",
-    "closePromotionalBanner": "Close promotional banner",
     "openPostSourceOptions": "Open post source options",
     "downloadPost": "Download post",
     "savePost": "Save post",
@@ -47,7 +46,6 @@
     "domain": "Domain",
     "tags": "Tags",
     "logo": "Logo",
-    "featurePromotion": "Feature promotion",
     "favicon": "Favicon",
     "page": "Page",
     "pageNumber": "Page {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "to bypass website blocks",
     "loadingMedia": "Loading media…",
     "play": "Play",
-    "adText": "Only one ad per hour. Never see ads again with Premium!",
-    "promotedContent": "Promoted content",
-    "promotedDescription": "No ads + exclusive features",
     "postAlt": "Post #{id}",
     "postDescription": "{mediaType} #{id} from {domain} with a score of {score}, {rating} rating, tagged with {tags}",
     "shareFoundOn": "Found on {name}: {url}",
@@ -482,19 +477,6 @@
     "placeholderWithExample": "Search for tags: genshin_impact",
     "searchTagOption": "Search \"{tag}\" tag",
     "changeFilter": "Change {label}"
-  },
-  "promotions": {
-    "percentOff": "{percent}% OFF",
-    "blackFriday": {
-      "title": "Black Friday Sale",
-      "description": "Get Premium at half price!",
-      "cta": "Get Premium"
-    },
-    "valentines": {
-      "title": "Valentine's Day Special",
-      "description": "Love is in the air! Get 30% off Premium",
-      "cta": "Get Premium"
-    }
   },
   "time": {
     "days": "d",

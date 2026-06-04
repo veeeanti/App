@@ -28,7 +28,6 @@
     "next": "अगला",
     "closeDialog": "संवाद बंद करें",
     "scrollToTop": "शीर्ष तक स्क्रॉल करें",
-    "closePromotionalBanner": "प्रचार बैनर बंद करें",
     "openPostSourceOptions": "पोस्ट स्रोत विकल्प खोलें",
     "downloadPost": "पोस्ट डाउनलोड करें",
     "savePost": "पोस्ट सहेजें",
@@ -47,7 +46,6 @@
     "domain": "डोमेन",
     "tags": "टैग",
     "logo": "लोगो",
-    "featurePromotion": "फ़ीचर प्रमोशन",
     "favicon": "फ़ेविकॉन",
     "page": "पेज",
     "pageNumber": "पेज {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "वेबसाइट ब्लॉक को बायपास करने के लिए",
     "loadingMedia": "मीडिया लोड हो रहा है...",
     "play": "खेलें",
-    "adText": "प्रति घंटे केवल एक विज्ञापन। प्रीमियम के साथ विज्ञापन दोबारा कभी न देखें!",
-    "promotedContent": "प्रचारित सामग्री",
-    "promotedDescription": "कोई विज्ञापन नहीं + विशेष सुविधाएँ",
     "postAlt": "पोस्ट #{id}",
     "postDescription": "{mediaType} #{id} {domain} से {score} के स्कोर के साथ, {rating} रेटिंग, {tags} के साथ टैग किया गया",
     "shareFoundOn": "{name} पर मिला: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "\"{tag}\" टैग खोजें",
     "changeFilter": "बदलें {label}"
   },
-  "promotions": {
-    "percentOff": "{percent}% की छूट",
-    "blackFriday": {
-      "title": "ब्लैक फ्राइडे सेल",
-      "description": "आधी कीमत पर प्रीमियम प्राप्त करें!",
-      "cta": "प्रीमियम प्राप्त करें"
-    },
-    "valentines": {
-      "title": "वैलेंटाइन दिवस विशेष",
-      "description": "प्यार हवा में है! प्रीमियम पर 30% की छूट पाएं",
-      "cta": "प्रीमियम प्राप्त करें"
-    }
-  },
+
   "time": {
     "days": "घ",
     "hours": "ज",

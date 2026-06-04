@@ -28,7 +28,6 @@
     "next": "下一步",
     "closeDialog": "关闭对话框",
     "scrollToTop": "滚动到顶部",
-    "closePromotionalBanner": "关闭促销横幅",
     "openPostSourceOptions": "打开帖子来源选项",
     "downloadPost": "下载帖子",
     "savePost": "保存帖子",
@@ -47,7 +46,6 @@
     "domain": "域名",
     "tags": "标签",
     "logo": "标志",
-    "featurePromotion": "特色推广",
     "favicon": "网站图标",
     "page": "页面",
     "pageNumber": "页{page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "绕过网站封锁",
     "loadingMedia": "正在加载媒体...",
     "play": "玩",
-    "adText": "每小时只有一则广告。使用 Premium 再也不会看到广告了！",
-    "promotedContent": "推广内容",
-    "promotedDescription": "无广告+独家功能",
     "postAlt": "帖子 #{id}",
     "postDescription": "{mediaType} #{id} 来自 {domain}，得分为 {score}，{rating} 评级，标记为 {tags}",
     "shareFoundOn": "在 {name} 上找到：{url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "搜索“{tag}”标签",
     "changeFilter": "更改{label}"
   },
-  "promotions": {
-    "percentOff": "{percent}% 折扣",
-    "blackFriday": {
-      "title": "黑色星期五促销",
-      "description": "以半价获得高级版！",
-      "cta": "获得高级版"
-    },
-    "valentines": {
-      "title": "情人节特别优惠",
-      "description": "爱就在空气中！享受高级版 30% 折扣",
-      "cta": "获得高级版"
-    }
-  },
+
   "time": {
     "days": "天",
     "hours": "小时",

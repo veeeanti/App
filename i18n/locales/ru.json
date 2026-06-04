@@ -28,7 +28,6 @@
     "next": "Вперёд",
     "closeDialog": "Закрыть диалог",
     "scrollToTop": "Прокрутить вверх",
-    "closePromotionalBanner": "Закрыть рекламный баннер",
     "openPostSourceOptions": "Открыть параметры источника поста",
     "downloadPost": "Скачать пост",
     "savePost": "Сохранить пост",
@@ -47,7 +46,6 @@
     "domain": "Домен",
     "tags": "Теги",
     "logo": "Логотип",
-    "featurePromotion": "Рекламная функция",
     "favicon": "Favicon",
     "page": "Страница",
     "pageNumber": "Страница {page}"
@@ -269,9 +267,8 @@
         "featuresDescription": "Доступ к {count} дополнительным сайтам и {features} эксклюзивным функциям!",
         "cancelAnytime": "Отмена в любое время",
         "safeDiscreetBilling": "Безопасная и конфиденциальная оплата",
-        "trustedByCustomers": "Доверяют {count}+ клиентов",
-        "savePercent": "Скидка {percent}%",
-        "faqTitle": "Часто задаваемые вопросы",
+"trustedByCustomers": "Доверяют {count}+ клиентов",
+      "faqTitle": "Часто задаваемые вопросы",
         "paymentDialogTitle": "Инструкции по оплате — {name}",
         "paymentDialogSubtitle": "Выберите предпочтительный способ оплаты",
         "featureNoAds": "Без рекламы",
@@ -428,9 +425,6 @@
     "toBypassBlocks": "чтобы обойти блокировки сайта",
     "loadingMedia": "Загрузка медиа…",
     "play": "Воспроизвести",
-    "adText": "Только одна реклама в час. С Premium рекламы нет навсегда!",
-    "promotedContent": "Рекламный контент",
-    "promotedDescription": "Без рекламы + эксклюзивные функции",
     "postAlt": "Пост #{id}",
     "postDescription": "{mediaType} #{id} с {domain}, оценка {score}, рейтинг {rating}, теги: {tags}",
     "shareFoundOn": "Найдено на {name}: {url}",
@@ -481,22 +475,9 @@
     "changeFilter": "Изменить {label}",
     "excludeTag": "Исключить тег",
     "includeTag": "Включить тег",
-    "submit": "Поиск"
-  },
-  "promotions": {
-    "percentOff": "СКИДКА {percent}%",
-    "blackFriday": {
-      "title": "Чёрная пятница",
-      "description": "Получите Premium вдвое дешевле!",
-      "cta": "Получить Premium"
+"submit": "Поиск"
     },
-    "valentines": {
-      "title": "День святого Валентина",
-      "description": "Любовь витает в воздухе! Скидка 30% на Premium",
-      "cta": "Получить Premium"
-    }
-  },
-  "time": {
+    "time": {
     "days": "д",
     "hours": "ч",
     "minutes": "м",

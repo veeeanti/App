@@ -28,7 +28,6 @@
     "next": "Susunod",
     "closeDialog": "Isara ang dialog",
     "scrollToTop": "Mag-scroll sa itaas",
-    "closePromotionalBanner": "Isara ang promotional banner",
     "openPostSourceOptions": "Buksan ang mga pagpipilian sa pinagmulan ng post",
     "downloadPost": "I-download ang post",
     "savePost": "I-save ang post",
@@ -47,7 +46,6 @@
     "domain": "Domain",
     "tags": "Mga tag",
     "logo": "Logo",
-    "featurePromotion": "Pag-promote ng tampok",
     "favicon": "Favicon",
     "page": "Pahina",
     "pageNumber": "Pahina {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "upang i-bypass ang mga bloke ng website",
     "loadingMedia": "Nilo-load ang media…",
     "play": "Maglaro",
-    "adText": "Isang ad lamang bawat oras. Huwag na muling makakakita ng mga ad gamit ang Premium!",
-    "promotedContent": "Na-promote na nilalaman",
-    "promotedDescription": "Walang mga ad + eksklusibong feature",
     "postAlt": "Post #{id}",
     "postDescription": "{mediaType} #{id} mula sa {domain} na may markang {score}, {rating} na rating, na may tag na {tags}",
     "shareFoundOn": "Natagpuan sa {name}: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "Hanapin ang \"{tag}\" na tag",
     "changeFilter": "Baguhin ang {label}"
   },
-  "promotions": {
-    "percentOff": "{percent}% OFF",
-    "blackFriday": {
-      "title": "Black Friday Sale",
-      "description": "Kumuha ng Premium sa kalahating presyo!",
-      "cta": "Kumuha ng Premium"
-    },
-    "valentines": {
-      "title": "Espesyal na Araw ng mga Puso",
-      "description": "Ang pag-ibig ay nasa himpapawid! Kumuha ng 30% diskwento sa Premium",
-      "cta": "Kumuha ng Premium"
-    }
-  },
+
   "time": {
     "days": "d",
     "hours": "h",

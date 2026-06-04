@@ -28,7 +28,6 @@
     "next": "Próximo",
     "closeDialog": "Fechar diálogo",
     "scrollToTop": "Voltar ao topo",
-    "closePromotionalBanner": "Fechar banner promocional",
     "openPostSourceOptions": "Abrir opções de fonte do post",
     "downloadPost": "Baixar post",
     "savePost": "Salvar post",
@@ -47,7 +46,6 @@
     "domain": "Domínio",
     "tags": "Tags",
     "logo": "Logo",
-    "featurePromotion": "Promoção de recurso",
     "favicon": "Favicon",
     "page": "Página",
     "pageNumber": "Página {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "para contornar bloqueios de sites",
     "loadingMedia": "Carregando mídia…",
     "play": "Reproduzir",
-    "adText": "Apenas um anúncio por hora. Nunca mais veja anúncios com Premium!",
-    "promotedContent": "Conteúdo promovido",
-    "promotedDescription": "Sem anúncios + recursos exclusivos",
     "postAlt": "Post #{id}",
     "postDescription": "{mediaType} #{id} de {domain} com pontuação de {score}, classificação {rating}, marcado com {tags}",
     "shareFoundOn": "Encontrado no {name}: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "Pesquisar tag \"{tag}\"",
     "changeFilter": "Alterar {label}"
   },
-  "promotions": {
-    "percentOff": "{percent}% OFF",
-    "blackFriday": {
-      "title": "Promoção de Black Friday",
-      "description": "Assine Premium pela metade do preço!",
-      "cta": "Assinar Premium"
-    },
-    "valentines": {
-      "title": "Especial de Dia dos Namorados",
-      "description": "O amor está no ar! Ganhe 30% de desconto no Premium",
-      "cta": "Assinar Premium"
-    }
-  },
+
   "time": {
     "days": "d",
     "hours": "h",

@@ -28,7 +28,6 @@
     "next": "ต่อไป",
     "closeDialog": "ปิดกล่องโต้ตอบ",
     "scrollToTop": "เลื่อนไปด้านบน",
-    "closePromotionalBanner": "ปิดแบนเนอร์ส่งเสริมการขาย",
     "openPostSourceOptions": "เปิดตัวเลือกแหล่งที่มาของโพสต์",
     "downloadPost": "ดาวน์โหลดโพสต์",
     "savePost": "บันทึกโพสต์",
@@ -47,7 +46,6 @@
     "domain": "โดเมน",
     "tags": "แท็ก",
     "logo": "โลโก้",
-    "featurePromotion": "การส่งเสริมคุณสมบัติ",
     "favicon": "ฟาวิคอน",
     "page": "หน้าหนังสือ",
     "pageNumber": "หน้า {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "เพื่อหลีกเลี่ยงการบล็อกเว็บไซต์",
     "loadingMedia": "กำลังโหลดสื่อ...",
     "play": "เล่น",
-    "adText": "เพียงหนึ่งโฆษณาต่อชั่วโมง ไม่เห็นโฆษณาอีกต่อไปด้วย Premium!",
-    "promotedContent": "เนื้อหาที่ได้รับการโปรโมต",
-    "promotedDescription": "ไม่มีโฆษณา + คุณสมบัติพิเศษ",
     "postAlt": "โพสต์ #{id}",
     "postDescription": "{mediaType} #{id} จาก {domain} ด้วยคะแนน {score}, {rating} เรตติ้ง ติดแท็กด้วย {tags}",
     "shareFoundOn": "พบเมื่อ {name}: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "ค้นหาแท็ก \"{tag}\"",
     "changeFilter": "เปลี่ยน {label}"
   },
-  "promotions": {
-    "percentOff": "{percent}% ปิด",
-    "blackFriday": {
-      "title": "การขายวันศุกร์สีดำ",
-      "description": "รับพรีเมี่ยมเพียงครึ่งราคา!",
-      "cta": "รับพรีเมี่ยม"
-    },
-    "valentines": {
-      "title": "ตอนพิเศษวันวาเลนไทน์",
-      "description": "ความรักอยู่ในอากาศ! รับส่วนลด 30% แบบพรีเมียม",
-      "cta": "รับพรีเมี่ยม"
-    }
-  },
+
   "time": {
     "days": "ง",
     "hours": "ชม.",

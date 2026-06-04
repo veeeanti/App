@@ -28,7 +28,6 @@
     "next": "Suivant",
     "closeDialog": "Fermer la fenêtre",
     "scrollToTop": "Remonter en haut",
-    "closePromotionalBanner": "Fermer la bannière promo",
     "openPostSourceOptions": "Ouvrir les options de source du post",
     "downloadPost": "Télécharger le post",
     "savePost": "Sauvegarder le post",
@@ -47,7 +46,6 @@
     "domain": "Domaine",
     "tags": "Tags",
     "logo": "Logo",
-    "featurePromotion": "Mise en avant d'une fonctionnalité",
     "favicon": "Favicon",
     "page": "Page",
     "pageNumber": "Page {page}"
@@ -428,9 +426,7 @@
     "toBypassBlocks": "pour contourner les blocages de sites",
     "loadingMedia": "Chargement du média…",
     "play": "Lire",
-    "adText": "Une seule pub par heure. Ne vois plus jamais de pubs avec Premium !",
-    "promotedContent": "Contenu sponsorisé",
-    "promotedDescription": "Sans pub + fonctionnalités exclusives",
+
     "postAlt": "Post n°{id}",
     "postDescription": "{mediaType} n°{id} de {domain} avec un score de {score}, classification {rating}, tagué avec {tags}",
     "shareFoundOn": "Trouvé sur {name} : {url}",
@@ -482,19 +478,6 @@
     "placeholderWithExample": "Rechercher des tags : genshin_impact",
     "searchTagOption": "Rechercher le tag « {tag} »",
     "changeFilter": "Changer {label}"
-  },
-  "promotions": {
-    "percentOff": "{percent}% DE RÉDUCTION",
-    "blackFriday": {
-      "title": "Promo Black Friday",
-      "description": "Passe Premium à moitié prix !",
-      "cta": "Passer Premium"
-    },
-    "valentines": {
-      "title": "Spécial Saint-Valentin",
-      "description": "L'amour est dans l'air ! Obtiens 30% de réduction sur Premium",
-      "cta": "Passer Premium"
-    }
   },
   "time": {
     "days": "j",

@@ -14,7 +14,6 @@
   } from '@headlessui/vue'
   import { project } from '~~/config/project'
 
-  const { shouldShow } = useActivePromotion()
   const { t } = useI18n()
   const localePath = useLocalePath()
   const customerCount = 2363
@@ -348,14 +347,6 @@
               {{ $t('pages.premium.landingPage.premiumPlans') }}
             </h2>
 
-            <!-- Promotional Banner -->
-            <ClientOnly>
-              <LazyPromotionalBanner
-                v-if="shouldShow"
-                class="mx-auto"
-              />
-            </ClientOnly>
-
             <!-- Features -->
             <div class="relative rounded-2xl bg-base-1000/70 ring-2 ring-base-0/10 backdrop-blur-sm">
               <div class="p-8 lg:pt-12 xl:p-10">
@@ -466,20 +457,18 @@
                     }"
                     class="rounded-b-2xl bg-base-0/10 px-2 pt-3 pb-4"
                   >
-                    <span
-                      :class="{
-                        'font-medium': interval.key === selectedPaymentInterval.key
-                      }"
-                      class="text-sm text-base-content-highlight"
-                    >
-                      {{
-                        $t('pages.premium.landingPage.savePercent', {
-                          percent: Math.round(
-                            ((interval.originalPrice - interval.price) / interval.originalPrice) * 100
-                          )
-                        })
-                      }}
-                    </span>
+<span
+                       :class="{
+                         'font-medium': interval.key === selectedPaymentInterval.key
+                       }"
+                       class="text-sm text-base-content-highlight"
+                     >
+                       {{
+                         Math.round(
+                           ((interval.originalPrice - interval.price) / interval.originalPrice) * 100
+                         )
+                       }}% off
+                     </span>
                   </div>
                 </div>
 

@@ -62,7 +62,6 @@ const denyUrls: RegExp[] = [
    * @see https://github.com/fdev/sentry-ignores
    */
   // Specific files
-  /\/js\/popunder\.js/,
   /\/fluid-player\//i,
 
   // Random plugins and extensions.

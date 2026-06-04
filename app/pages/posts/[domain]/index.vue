@@ -35,7 +35,6 @@
   const router = useRouter()
   const route = useRoute()
   const config = useRuntimeConfig()
-  const nuxtApp = useNuxtApp()
   const localePath = useLocalePath()
   const { t } = useI18n()
   const { toast } = useLazyToast()
@@ -43,8 +42,6 @@
 
   const { postsPerPage } = useUserSettings()
   const { isPremium } = useUserData()
-  const { hasInteracted } = useInteractionDetector()
-  const { schedule: scheduleIdleTask } = useIdleTask()
   const { booruList } = useBooruList()
   const { selectedBlockList } = useBlockLists()
   const { addUrlToPageHistory } = usePageHistory()
@@ -60,42 +57,6 @@
   })
 
   const additionalBoorusPremiumSlideIndex = 4
-
-  /**
-   * Show ads for non-premium users
-   */
-  onMounted(() => {
-    const hasLoadedAds = ref(false)
-
-    watch(
-      [hasInteracted, isPremium],
-      ([hasInteracted, isPremiumUser]) => {
-        if (hasLoadedAds.value) {
-          return
-        }
-
-        if (!hasInteracted) {
-          return
-        }
-
-        if (isPremiumUser) {
-          return
-        }
-
-        scheduleIdleTask(async () => {
-          if (hasLoadedAds.value || isPremium.value) {
-            return
-          }
-
-          hasLoadedAds.value = true
-
-          const { default: useAdvertisements } = await import('~/composables/useAdvertisements')
-          nuxtApp.runWithContext(useAdvertisements)
-        })
-      },
-      { immediate: true }
-    )
-  })
 
   // Reopen the existing premium upsell when a non-premium user lands here
   // via redirect from a premium-only booru to the fallback booru route.
@@ -1232,11 +1193,6 @@
                   @open-tag-in-new-tab="onPostOpenTagInNewTab"
                   @set-tag="onPostSetTag"
                 />
-
-                <!-- Promoted content -->
-                <template v-if="!isPremium && virtualRow.index !== 0 && virtualRow.index % 7 === 0">
-                  <LazyPromotedContent class="mt-4" />
-                </template>
               </template>
             </li>
           </ol>

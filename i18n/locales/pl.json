@@ -28,7 +28,6 @@
     "next": "Następny",
     "closeDialog": "Zamknij okno dialogowe",
     "scrollToTop": "Przewiń do góry",
-    "closePromotionalBanner": "Zamknij baner promocyjny",
     "openPostSourceOptions": "Otwórz opcje źródła postów",
     "downloadPost": "Pobierz wpis",
     "savePost": "Zapisz wpis",
@@ -47,7 +46,6 @@
     "domain": "Domena",
     "tags": "Tagi",
     "logo": "Logo",
-    "featurePromotion": "Promocja funkcji",
     "favicon": "Favikona",
     "page": "Strona",
     "pageNumber": "Strona {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "aby ominąć blokady stron internetowych",
     "loadingMedia": "Ładowanie multimediów…",
     "play": "Zagraj",
-    "adText": "Tylko jedna reklama na godzinę. Nigdy więcej nie oglądaj reklam dzięki Premium!",
-    "promotedContent": "Promowane treści",
-    "promotedDescription": "Brak reklam + ekskluzywne funkcje",
     "postAlt": "Post #{id}",
     "postDescription": "{mediaType} #{id} z {domain} z wynikiem {score}, ocena {rating}, oznaczony tagiem {tags}",
     "shareFoundOn": "Znaleziono w {name}: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "Wyszukaj znacznik „{tag}”.",
     "changeFilter": "Zmień {label}"
   },
-  "promotions": {
-    "percentOff": "{percent}% ZNIŻKI",
-    "blackFriday": {
-      "title": "Wyprzedaż w Czarny Piątek",
-      "description": "Zdobądź Premium za pół ceny!",
-      "cta": "Uzyskaj wersję Premium"
-    },
-    "valentines": {
-      "title": "Specjalna oferta walentynkowa",
-      "description": "Miłość wisi w powietrzu! Uzyskaj 30% zniżki na Premium",
-      "cta": "Uzyskaj wersję Premium"
-    }
-  },
+
   "time": {
     "days": "d",
     "hours": "godz",

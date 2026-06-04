@@ -14,7 +14,6 @@
   type FeaturedTag = {
     name: string
     path: string
-    isAdvertisement?: boolean
     media: FeaturedTagMedia[]
   }
 
@@ -26,16 +25,12 @@
   }
 
   const config = useRuntimeConfig()
-  const nuxtApp = useNuxtApp()
   const { t } = useI18n()
   const { toast } = useLazyToast()
   const localePath = useLocalePath()
 
-  const { isPremium } = useUserData()
-  const { hasInteracted } = useInteractionDetector()
   const { schedule: scheduleIdleTask } = useIdleTask()
   const { seasonalEmoji } = useSeasonalIcon()
-  const { shouldShow } = useActivePromotion()
 
   const { booruList } = useBooruList()
   const { selectedDomainFromStorage } = useSelectedDomainFromStorage()
@@ -168,37 +163,6 @@
 
       shouldLoadHistorySection.value = true
     })
-
-    const hasLoadedAds = ref(false)
-
-    watch(
-      [hasInteracted, isPremium],
-      ([hasInteracted, isPremiumUser]) => {
-        if (hasLoadedAds.value) {
-          return
-        }
-
-        if (!hasInteracted) {
-          return
-        }
-
-        if (isPremiumUser) {
-          return
-        }
-
-        scheduleIdleTask(async () => {
-          if (hasLoadedAds.value || isPremium.value) {
-            return
-          }
-
-          hasLoadedAds.value = true
-
-          const { default: useAdvertisements } = await import('~/composables/useAdvertisements')
-          nuxtApp.runWithContext(useAdvertisements)
-        })
-      },
-      { immediate: true }
-    )
   })
 
   const featuredDomains = computed<FeaturedDomain[]>(() => [
@@ -217,18 +181,6 @@
             { type: 'image', src: '/img/featured/rule34.xxx/top-4.jpg' }
           ]
         },
-        // Advertisement from AdSession
-        // {
-        //   name: 'Anime AI Sluts',
-        //   path: 'https://s.eunow4u.com/v1/d.php?z=2168',
-        //   isAdvertisement: true,
-        //   media: [
-        //     { type: 'image', src: '/img/ads/Advertisement_1.webp' },
-        //     { type: 'image', src: '/img/ads/Advertisement_2.webp' },
-        //     { type: 'image', src: '/img/ads/Advertisement_3.webp' },
-        //     { type: 'image', src: '/img/ads/Advertisement_4.webp' }
-        //   ]
-        // },
         {
           name: t('pages.home.trendingPosts'),
           path: '/posts/rule34.xxx?filter%5Bscore%5D=>%3D50',
@@ -797,14 +749,7 @@
       </section>
 
       <ClientOnly>
-        <!-- Discounts -->
-        <section>
-          <LazyPromotionalBanner
-            v-if="shouldShow"
-            class="mt-4 mb-2"
-          />
-        </section>
-
+        <!-- Page History -->
         <LazyPageHistorySection v-if="shouldLoadHistorySection" />
       </ClientOnly>
 

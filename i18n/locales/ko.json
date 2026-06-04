@@ -28,7 +28,6 @@
     "next": "다음",
     "closeDialog": "대화상자 닫기",
     "scrollToTop": "맨 위로 스크롤",
-    "closePromotionalBanner": "홍보배너 닫기",
     "openPostSourceOptions": "게시물 소스 옵션 열기",
     "downloadPost": "게시물 다운로드",
     "savePost": "게시물 저장",
@@ -47,7 +46,6 @@
     "domain": "도메인",
     "tags": "태그",
     "logo": "로고",
-    "featurePromotion": "기능 프로모션",
     "favicon": "파비콘",
     "page": "페이지",
     "pageNumber": "페이지 {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "웹사이트 차단을 우회하려면",
     "loadingMedia": "미디어 로드 중…",
     "play": "플레이",
-    "adText": "시간당 하나의 광고만 가능합니다. 프리미엄으로 다시는 광고를 보지 마세요!",
-    "promotedContent": "프로모션 콘텐츠",
-    "promotedDescription": "광고 없음 + 독점 기능",
     "postAlt": "게시물 #{id}",
     "postDescription": "{mediaType} #{id}({domain}의 점수, {score}, {rating} 등급, {tags} 태그 포함)",
     "shareFoundOn": "{name}에서 발견됨: {url}",
@@ -483,19 +478,7 @@
     "searchTagOption": "\"{tag}\" 태그 검색",
     "changeFilter": "{label} 변경"
   },
-  "promotions": {
-    "percentOff": "{percent}% 할인",
-    "blackFriday": {
-      "title": "블랙 프라이데이 세일",
-      "description": "프리미엄을 반값에 만나보세요!",
-      "cta": "프리미엄 받기"
-    },
-    "valentines": {
-      "title": "발렌타인데이 스페셜",
-      "description": "사랑은 공중에 있습니다! 프리미엄 30% 할인 받기",
-      "cta": "프리미엄 받기"
-    }
-  },
+
   "time": {
     "days": "디",
     "hours": "시간",

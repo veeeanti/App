@@ -28,7 +28,6 @@
     "next": "Siguiente",
     "closeDialog": "Cerrar diálogo",
     "scrollToTop": "Volver arriba",
-    "closePromotionalBanner": "Cerrar banner promocional",
     "openPostSourceOptions": "Abrir opciones de fuente de la publicación",
     "downloadPost": "Descargar publicación",
     "savePost": "Guardar publicación",
@@ -47,7 +46,6 @@
     "domain": "Dominio",
     "tags": "Etiquetas",
     "logo": "Logotipo",
-    "featurePromotion": "Promoción de función",
     "favicon": "Favicon",
     "page": "Página",
     "pageNumber": "Página {page}"
@@ -428,9 +426,6 @@
     "toBypassBlocks": "para evitar bloqueos del sitio",
     "loadingMedia": "Cargando medios…",
     "play": "Reproducir",
-    "adText": "Solo un anuncio por hora. ¡Nunca más veas anuncios con Premium!",
-    "promotedContent": "Contenido promocionado",
-    "promotedDescription": "Sin anuncios + funciones exclusivas",
     "postAlt": "Publicación #{id}",
     "postDescription": "{mediaType} #{id} de {domain} con una puntuación de {score}, clasificación {rating}, etiquetado con {tags}",
     "shareFoundOn": "Encontrado en {name}: {url}",
@@ -483,19 +478,7 @@
     "includeTag": "Incluir etiqueta",
     "submit": "Buscar"
   },
-  "promotions": {
-    "percentOff": "{percent}% de descuento",
-    "blackFriday": {
-      "title": "Oferta del Black Friday",
-      "description": "¡Obtén Premium a mitad de precio!",
-      "cta": "Obtener Premium"
-    },
-    "valentines": {
-      "title": "Especial de San Valentín",
-      "description": "¡El amor está en el aire! Obtén un 30% de descuento en Premium",
-      "cta": "Obtener Premium"
-    }
-  },
+
   "time": {
     "days": "d",
     "hours": "h",

@@ -1,9 +1,8 @@
-export type DialogManagerDialog = 'premium' | 'installPwa' | 'feedback' | 'newsletter' | 'review'
+export type DialogManagerDialog = 'installPwa' | 'feedback' | 'newsletter' | 'review'
 
 export function useDialogManagerState() {
   const { timesTheAppHasBeenOpened, promptInstallPwa, promptFeedback, promptNewsletter, promptReview } =
     useAppStatistics()
-  const { open: isPremiumDialogOpen } = usePremiumDialog()
   const isStandaloneDisplayMode = useState('isStandaloneDisplayMode', () => false)
 
   if (import.meta.client) {
@@ -13,10 +12,6 @@ export function useDialogManagerState() {
   }
 
   const pendingDialog = computed<DialogManagerDialog | undefined>(() => {
-    if (isPremiumDialogOpen.value) {
-      return 'premium'
-    }
-
     if (timesTheAppHasBeenOpened.value >= 3 && !promptInstallPwa.value && !isStandaloneDisplayMode.value) {
       return 'installPwa'
     }
@@ -36,10 +31,6 @@ export function useDialogManagerState() {
 
   function closeDialog(dialog = pendingDialog.value) {
     switch (dialog) {
-      case 'premium':
-        isPremiumDialogOpen.value = false
-        break
-
       case 'installPwa':
         promptInstallPwa.value = true
         break
