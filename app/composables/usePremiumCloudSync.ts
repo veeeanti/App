@@ -1,4 +1,4 @@
-import { booruTypeList } from '~/assets/lib/dist/dist/util/BooruUtils'
+import { booruTypeList } from '~/assets/lib/dist/src/util/BooruUtils'
 import { useQueryClient } from '@tanstack/vue-query'
 import {
   createLatestAsyncQueue,
