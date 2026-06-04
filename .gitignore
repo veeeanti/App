@@ -71,11 +71,11 @@ typings/
 .nuxt
 
 # Nuxt generate
-dist
+ dist
 
 # Submodules and third-party browser scripts
-assets/lib/dist
-app/assets/lib/dist
+# assets/lib/dist
+# app/assets/lib/dist
 
 # vuepress build output
 .vuepress/dist
