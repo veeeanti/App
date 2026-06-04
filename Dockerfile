@@ -23,6 +23,8 @@ RUN corepack enable && pnpm install --frozen-lockfile
 
 COPY . .
 
+RUN git submodule update --init --recursive
+
 RUN pnpm run build
 
 # Stage 2: Production
