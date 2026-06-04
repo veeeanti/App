@@ -22,7 +22,11 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN corepack enable && pnpm install --frozen-lockfile
 
 COPY . .
-
+RUN apt-get update && apt-get install -y \
+    git \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+    
 RUN git submodule update --init --recursive
 
 RUN pnpm run build
